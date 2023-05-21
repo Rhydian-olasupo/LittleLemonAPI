@@ -5,7 +5,7 @@ from rest_framework import generics, permissions
 from .models import Category,MenuItem,Cart,Order,OrderItem
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated, IsAdminUser,OR
-from .serializers import CartSerializer,CategorySerializer,MenuItemSerializer,OrderItemSerializer,OrderSerializer,UserSerializer
+from .serializers import CartSerializer,CategorySerializer,MenuItemSerializer,OrderSerializer,UserSerializer
 from rest_framework.response import Response
 from django.contrib.auth.models import User, Group
 from rest_framework import status
