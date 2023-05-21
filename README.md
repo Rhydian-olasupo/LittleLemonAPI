@@ -14,10 +14,10 @@ Using Djoser to automatically create endpoints
     - **POST**: auth/token/login: Generate user's access-token {username and password}
 
 ## Menu-Items Endpoints
-- api/menu-items:
-    Role: Customer and Delivery Crew
-        **GET**: List all menu items
-        **POST,PUT,PATCH,DELETE**: Denies access and returns 403-Unauthorized HTTP status code
+- api/menu-items 
+    Role: Customer and Delivery Crew:
+    - **GET**: List all menu items
+    - **POST,PUT,PATCH,DELETE**: Denies access and returns 403-Unauthorized HTTP status code
 
     Role: Manager
         **GET**: List all menu items
