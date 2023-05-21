@@ -20,18 +20,18 @@ Using Djoser to automatically create endpoints
     - **POST,PUT,PATCH,DELETE**: Denies access and returns 403-Unauthorized HTTP status code
 
     Role: Manager
-        **GET**: List all menu items
-        **POST**: Creates a new menu item
+    - **GET**: List all menu items
+    - **POST**: Creates a new menu item
 
 - api/menu-items/{menuItem}:
     Role: Customer and Delivery Crew
-        **GET**: List a single menu item
-        **POST,PUT,PATCH,DELETE**: Denies access and returns 403-Unauthorized HTTP status code
+    - **GET**: List a single menu item
+    - **POST,PUT,PATCH,DELETE**: Denies access and returns 403-Unauthorized HTTP status code
 
     Role: Manager
-        **GET**: List a single menu item.
-        **PUT,PATCH**: Updates single menu item.
-        **DELETE**: Deletes menu item  
+    - **GET**: List a single menu item.
+    - **PUT,PATCH**: Updates single menu item.
+    - **DELETE**: Deletes menu item  
 
 
 
