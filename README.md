@@ -86,6 +86,42 @@ Creating a fully functioning API project for the Littlelemon Restaurant so that 
 
     - **DELETES**: Deletes all menu-items created by the current user token
 
+## Order management enpoints
+
+- api/orders:
+    Role: Customer
+
+    - **GET**: Returns all orders with order items created by the user
+
+    - **POST**: Creates a new order item for the current user. Gets current cart items from the cart endpoint and adds those items to the order items table. Then deletes all items from the cart for the user.
+
+    Role: Manager
+
+    - **GET**: 	Returns all orders with order items by all users
+
+    Role: Delivery Crew
+
+    - **GET**: Returns all orders with order items assigned to the delivery crew
+
+- api/orders/{orderId}:
+
+    Role: Customer
+
+    - **GET**: Returns all items for this order id. If the order ID doesn’t belong to the current user, it displays an appropriate HTTP error status code.
+
+    Role: Manager
+
+    - **PUT,PATCH**: Updates the order. A manager can use this endpoint to set a delivery crew to this order, and also update the order status to 0 or 1. If a delivery crew is assigned to this order and the status = 0, it means the order is out for delivery. If a delivery crew is assigned to this order and the status = 1, it means the order has been delivered.
+
+    - **DELETE**: Deletes this order
+
+    Role: Delivery Crew
+
+    - **PATCH**: A delivery crew can use this endpoint to update the order status to 0 or 1. The delivery crew will not be able to update anything else in this order.
+
+
+
+
 
 
 
