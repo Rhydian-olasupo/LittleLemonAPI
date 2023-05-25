@@ -120,6 +120,9 @@ Creating a fully functioning API project for the Littlelemon Restaurant so that 
     - **PATCH**: A delivery crew can use this endpoint to update the order status to 0 or 1. The delivery crew will not be able to update anything else in this order.
 
 
+Pagination, filtering and proper sorting capabilities were applied to the api/menu-items and api/orders endpoints.
+
+API throttling was also applied for authenticated users and anonymous or unauthenticated users.
 
 
 
